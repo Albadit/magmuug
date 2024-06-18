@@ -13,7 +13,7 @@ const logos_small = Array(4).fill(null).map((_, index) => (
 ));
 
 const logos_large = Array(12).fill(null).map((_, index) => (
-  <motion.div 
+  <motion.div key={index}
     whileHover={{ rotate: 180, transition: { duration: 0.7, type: 'spring' } }}
     whileTap={{ rotate: 180, transition: { duration: 0.7, type: 'spring' } }}
   >
