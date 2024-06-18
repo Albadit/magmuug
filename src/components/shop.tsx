@@ -3,7 +3,7 @@ import { shop_content } from '@/lib/data'
 import ProductCard from '@/components/productCard'
 import { UseInViewMotion } from '@/lib/hooks'
 
-export default function shop() {
+export default function Shop() {
   return (
     <section className='flex flex-col justify-between items-center gap-24 lg:px-horizontal-padding-desktop px-horizontal-padding-mobile lg:py-section-desktop py-section-mobile'>
       <UseInViewMotion className='flex flex-col justify-between items-center gap-5' translate={{ y: -50 }}>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Logo from '@/components/icons/logo'
 import { footerlinks } from '@/lib/data'
 
-export default function footer() {
+export default function Footer() {
   return (
     <footer className='bg-primary font-primary text-textSecondary fill-textSecondary flex flex-col gap-8 py-12 lg:px-horizontal-padding-desktop px-horizontal-padding-mobile'>
       <div className='flex lg:flex-row flex-col-reverse justify-between gap-8'>

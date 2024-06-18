@@ -25,7 +25,7 @@ const logos_large = Array(12).fill(null).map((_, index) => (
   </motion.div>
 ));
 
-export default function fun() {
+export default function Fun() {
   return (
     <section className='bg-primaryHover flex flex-wrap justify-center gap-[80px] lg:px-horizontal-padding-desktop px-horizontal-padding-mobile lg:py-section-desktop py-section-mobile'>
       <div className='md:hidden flex flex-wrap justify-center gap-[80px]'>{logos_small}</div>

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { intro_content } from '@/lib/data'
 import { UseInViewMotion } from '@/lib/hooks'
 
-export default function intro() {
+export default function Intro() {
   return (
     <section className=' flex sm:flex-row flex-col-reverse justify-between items-center gap-5 gap-y-12 sm:min-h-[calc(100dvh-100px)] min-h-[calc(100dvh-800px)] lg:px-horizontal-padding-desktop px-horizontal-padding-mobile lg:py-section-desktop py-section-mobile'>
       <UseInViewMotion className='flex flex-col gap-16' translate={{ x: -50 }} delay="400ms">

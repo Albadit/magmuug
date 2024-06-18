@@ -42,7 +42,7 @@ export function UseInViewMotion({
   )
 }
 
-export function useToggle(initialState: boolean = false) {
+export function UseToggle(initialState: boolean = false) {
   const [isToggled, setIsToggled] = useState(initialState);
 
   const toggle = () => {

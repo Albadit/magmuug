@@ -2,7 +2,7 @@ import React from 'react'
 import { potential_content } from '@/lib/data'
 import { UseInViewMotion } from '@/lib/hooks'
 
-export default function potential() {
+export default function Potential() {
   return (
     <section className='flex flex-col gap-12 lg:px-horizontal-padding-desktop px-horizontal-padding-mobile lg:py-section-desktop py-section-mobile'>
       <UseInViewMotion className='flex flex-col gap-2' translate={{ x: 50 }}>

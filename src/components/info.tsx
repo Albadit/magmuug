@@ -3,7 +3,7 @@ import { info_content } from '@/lib/data'
 import { IconChevronRight } from '@tabler/icons-react';
 import { UseInViewMotion } from '@/lib/hooks';
 
-export default function info() {
+export default function Info() {
   return (
     <section className='lg:px-horizontal-padding-desktop px-horizontal-padding-mobile lg:py-section-desktop py-section-mobile'>
       <UseInViewMotion className='lg:grid grid-cols-2 flex flex-col gap-12' translate={{ y: -50 }}>

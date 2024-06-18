@@ -1,16 +1,15 @@
-import React from 'react'
-import Link from 'next/link'
-import Logo from '@/components/icons/logo'
-import { headerlinks } from '@/lib/data'
-import { IconShoppingCartFilled  } from '@tabler/icons-react';
+import React from 'react';
+import Link from 'next/link';
+import Logo from '@/components/icons/logo';
+import { headerlinks } from '@/lib/data';
+import { IconShoppingCartFilled } from '@tabler/icons-react';
 import { IconMenu2 } from '@tabler/icons-react';
 import { IconX } from '@tabler/icons-react';
-import { useToggle } from '@/lib/hooks';
+import { UseToggle } from '@/lib/hooks';
 import { UseInViewMotion } from '@/lib/hooks';
 
-
-export default function header() {
-  const [isOpen, setToggle] = useToggle(false);
+export default function Header() {
+  const [isOpen, setToggle] = UseToggle(false);
   return (
     <header className='z-50 relative'>
       <UseInViewMotion className='sm:h-[100px] h-[80px] flex flex-row justify-between items-center lg:gap-12 gap-5 lg:px-horizontal-padding-desktop px-horizontal-padding-mobile' translate={{ y: -50 }} delay='200ms'>
@@ -32,7 +31,6 @@ export default function header() {
             </nav>
           </div>
           <div className='lg:hidden flex flex-row' onClick={setToggle}>
-            {/* <IconMenu2 stroke={2} className='h-10 w-auto fill-textPrimary'/> */}
             {!isOpen && (<IconMenu2 stroke={2} className='h-10 w-auto fill-textPrimary'/>)}
             {isOpen && (<IconX stroke={2} className='h-10 w-auto fill-textPrimary'/>)}
           </div>
