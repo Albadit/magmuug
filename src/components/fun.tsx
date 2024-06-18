@@ -5,21 +5,17 @@ import { motion } from "framer-motion";
 
 const logos_small = Array(4).fill(null).map((_, index) => (
   <motion.div key={index}
-    whileHover={{
-      rotate: 180,
-      transition: { duration: 0.7, type: 'spring' },
-    }}
+    whileHover={{ rotate: 180, transition: { duration: 0.7, type: 'spring' } }}
+    whileTap={{ rotate: 180, transition: { duration: 0.7, type: 'spring' } }}
   >
     <Logo className="fill-primary lg:h-[140px] h-[80px] w-auto mt-3" />
   </motion.div>
 ));
 
 const logos_large = Array(12).fill(null).map((_, index) => (
-  <motion.div key={index}
-    whileHover={{
-      rotate: 180,
-      transition: { duration: 0.7, type: 'spring' },
-    }}
+  <motion.div 
+    whileHover={{ rotate: 180, transition: { duration: 0.7, type: 'spring' } }}
+    whileTap={{ rotate: 180, transition: { duration: 0.7, type: 'spring' } }}
   >
     <Logo className="fill-primary lg:h-[140px] h-[80px] w-auto mt-3" />
   </motion.div>
