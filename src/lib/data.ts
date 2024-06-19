@@ -1,5 +1,5 @@
 // import magmuugbottleImg from "@/../../public/img/bottel.png"
-import magmuugbottleImg from "@/../../public/img/bottel_copy.png"
+import magmuugbottleImg from "@/../../public/img/bottel_6x8.png"
 import magmuugbottleCorpImg from "@/../../public/img/bottel.png"
 import splashImg from "@/../../public/img/splash.png"
 import manualImg from "@/../../public/img/manual.png"
