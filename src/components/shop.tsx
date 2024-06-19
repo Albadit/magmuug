@@ -1,7 +1,8 @@
 import React from 'react'
 import { shop_content } from '@/lib/data'
-import ProductCard from '@/components/productCard'
 import { UseInViewMotion } from '@/lib/hooks'
+import ProductCard from '@/components/productCard'
+import ProductShow from '@/components/productShow'
 
 export default function Shop() {
   return (
@@ -12,7 +13,7 @@ export default function Shop() {
       </UseInViewMotion>
       <UseInViewMotion className='w-full flex flex-wrap justify-center gap-12' translate={{ y: 50 }}>
         {shop_content.products.map((product, index) => (
-          <ProductCard key={index} product={product} />
+          <ProductShow key={index} product={product} />
         ))}
       </UseInViewMotion>
     </section>

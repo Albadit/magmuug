@@ -46,9 +46,9 @@ export default function Header() {
           </nav>
         </div>
         )}
-        <div className='bg-primary rounded-cart'>
+        {/* <div className='bg-primary rounded-cart'>
           <IconShoppingCartFilled className='h-5 w-auto m-2 fill-textSecondary'/>
-        </div>
+        </div> */}
       </UseInViewMotion>
     </header>
   )
