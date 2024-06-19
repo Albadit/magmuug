@@ -1,8 +1,8 @@
-// import magmuugbottleImg from "@/../../public/bottel.png"
-import magmuugbottleImg from "@/../../public/bottel_copy.png"
-import magmuugbottleCorpImg from "@/../../public/bottel.png"
-import splashImg from "@/../../public/splash.png"
-import manualImg from "@/../../public/manual.png"
+// import magmuugbottleImg from "@/../../public/img/bottel.png"
+import magmuugbottleImg from "@/../../public/img/bottel_copy.png"
+import magmuugbottleCorpImg from "@/../../public/img/bottel.png"
+import splashImg from "@/../../public/img/splash.png"
+import manualImg from "@/../../public/img/manual.png"
 
 export const headerlinks = [
   { name: "Home", hash: "/" },

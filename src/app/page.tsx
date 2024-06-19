@@ -1,11 +1,8 @@
 'use client';
 
-import Image from "next/image";
 import React from 'react';
-import { motion } from "framer-motion";
-
 import Header from "@/components/header";
-import Intro from "@/components/intro";
+import Hero from "@/components/hero";
 import Shop from "@/components/shop";
 import Slider from "@/components/slider";
 import Features from "@/components/features";
@@ -16,10 +13,10 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="bg-background font-secondary text-textPrimary">
+    <>
       <Header/>
       <main>
-        <Intro/>
+        <Hero/>
         <Shop/>
         <Slider/>
         <Features/>
@@ -28,6 +25,6 @@ export default function Home() {
         <Potential/>
       </main>
       <Footer/>
-    </div>
+    </>
   );
 }
