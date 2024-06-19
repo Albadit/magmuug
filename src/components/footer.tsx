@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
         <div className='flex flex-row gap-[1px] font-primary font-bold md:text-5xl text-4xl'>
           <span>mag</span>
-          <Logo className='md:h-10 h-8 w-fit mt-3'/>
+          <Logo className='md:h-10 h-8 w-auto mt-3'/>
           <span>uug</span>
         </div>
       </div>

@@ -13,23 +13,21 @@ export default function Header() {
   return (
     <header className='z-50 relative'>
       <UseInViewMotion className='sm:h-[100px] h-[80px] flex flex-row justify-between items-center lg:gap-12 gap-5 lg:px-horizontal-padding-desktop px-horizontal-padding-mobile' translate={{ y: -50 }} delay='200ms'>
-        <div className='flex flex-row justify-between items-center grow'>
-          <Link href='/' className='flex flex-row gap-0.5 font-primary font-bold text-5xl'>
-            <span className='sm:block hidden'>mag</span>
-            <Logo className='fill-primary h-10 w-fit sm:mt-3'/>
-            <span className='sm:block hidden'>uug</span>
-          </Link>
-          <div className='lg:flex flex-row hidden gap-14 items-center'>
-            <nav className='font-primary font-semibold'>
-              <ul className='flex flex-row gap-10'>
-              {headerlinks.map((link, index) => (
-                <li key={index}>
-                  <Link href={link.hash}>{link.name}</Link>
-                </li>
-              ))}
-              </ul>
-            </nav>
-          </div>
+        <Link href='/' className='flex flex-row gap-0.5 font-primary font-bold text-5xl grow'>
+          <span className='sm:block hidden'>mag</span>
+          <Logo className='fill-primary h-10 w-auto sm:mt-3'/>
+          <span className='sm:block hidden'>uug</span>
+        </Link>
+        <div className='flex flex-row justify-between items-center'>
+          <nav className='lg:block hidden font-primary font-semibold'>
+            <ul className='flex flex-row gap-10'>
+            {headerlinks.map((link, index) => (
+              <li key={index}>
+                <Link href={link.hash}>{link.name}</Link>
+              </li>
+            ))}
+            </ul>
+          </nav>
           <div className='lg:hidden flex flex-row' onClick={setToggle}>
             {!isOpen && (<IconMenu2 stroke={2} className='h-10 w-auto fill-textPrimary'/>)}
             {isOpen && (<IconX stroke={2} className='h-10 w-auto fill-textPrimary'/>)}
